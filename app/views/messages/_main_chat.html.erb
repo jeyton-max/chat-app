@@ -6,36 +6,7 @@
 </div>
 
 <div class="main-contents">
-  <div class="content-list">
-    <div class="content-top">
-      <div class="user-name">
-        saku
-      </div>
-      <div class="date-time">
-        2025/10/19(sun) 20:30:00
-      </div>
-    </div>
-    <div class="content-bottom">
-      <div class="message-text">
-        お世話になります。
-      </div>
-    </div>
-  </div>
-  <div class="content-list">
-    <div class="content-top">
-      <div class="user-name">
-        ono
-      </div>
-      <div class="date-time">
-        2025/10/20(mon) 8:30:00
-      </div>
-    </div>
-    <div class="content-bottom">
-      <div class="message-text">
-        遅くなり申し訳ございません。
-      </div>
-    </div>
-  </div>
+  <%= render partial: 'message', collection: @messages %>
 </div>
 
 <%= form_with model: [@room, @message], html: {class: "form"}, local: true do |f|%>
