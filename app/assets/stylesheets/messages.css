@@ -121,10 +121,18 @@
   display: flex;
 }
 
+.form {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
 .form-input {
   width: 100%;
   background-color: #dddddd;
   display: flex;
+  flex-grow: 1;
+  align-items: center;
 }
 
 .form-message {
